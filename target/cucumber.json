@@ -1,0 +1,209 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "User already login",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 257284000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user launch the Sauce Demo app",
+            "match": {
+              "location": "BackgroundStep.userLaunchTheSauceDemoApp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2251073300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Sauce Demo app will displayed",
+            "match": {
+              "location": "BackgroundStep.sauceDemoAppWillDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2058187400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user input username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStep.userInputUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1239316700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user input password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStep.userInputPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 600760500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click Login button",
+            "match": {
+              "location": "LoginStep.userClickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1952497700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user redirected to \"PRODUCTS\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PRODUCTS",
+                  "offset": 20
+                }
+              ],
+              "location": "CommonStep.userRedirectedTo(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 17140323500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.before()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "TC004 - User want to see detail a product",
+        "description": "",
+        "id": "product-detail-scenarios;tc004---user-want-to-see-detail-a-product",
+        "after": [
+          {
+            "result": {
+              "duration": 1116649700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9070191200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click on \"Sauce Labs Onesie\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sauce Labs Onesie",
+                  "offset": 15
+                }
+              ],
+              "location": "ProductStep.userClickOn(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1735401100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user redirected to \"BACK TO PRODUCTS\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BACK TO PRODUCTS",
+                  "offset": 20
+                }
+              ],
+              "location": "CommonStep.userRedirectedTo(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 380215000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user read product \"Sauce Labs Onesie\" detail is appear",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sauce Labs Onesie",
+                  "offset": 19
+                }
+              ],
+              "location": "ProductDetailStep.userReadProduct(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@TC004"
+          }
+        ]
+      }
+    ],
+    "name": "Product Detail Scenarios",
+    "description": "This cases is for Product feature which is every case will started with Background first.",
+    "id": "product-detail-scenarios",
+    "keyword": "Feature",
+    "uri": "ProductDetail.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@ProductDetail"
+      }
+    ]
+  }
+]
