@@ -14,3 +14,6 @@ Second Way:
 
 Run and generate report:
 - ```mvn test site surefire-report:report```
+
+## Reference
+(https://developer.android.com/reference/androidx/test/uiautomator/UiSelector)[https://developer.android.com/reference/androidx/test/uiautomator/UiSelector]
